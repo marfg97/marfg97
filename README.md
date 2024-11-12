@@ -19,7 +19,7 @@
 
 ###
 
-<h1 align="center">Hello Worl!</h1>
+<h1 align="center">Hello World!</h1>
 
 ###
 
