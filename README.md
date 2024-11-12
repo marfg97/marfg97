@@ -1,5 +1,6 @@
 <div align="center">
-  <img height="150" src="https://apod.nasa.gov/apod/image/2411/Ngc6888Hoo_Aro_960.jpg"  />
+  <img width="500" height="300" src="https://apod.nasa.gov/apod/image/2411/Ngc6888Hoo_Aro_960.jpg" />
+  <p><i>Title: {title}</i></p>
 </div>
 
 ###
