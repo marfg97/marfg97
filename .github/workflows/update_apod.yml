@@ -1,0 +1,25 @@
+name: API Workflow
+
+on: [push]
+
+jobs:
+  api_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install requests
+
+      - name: Use NASA API Key
+        run: |
+          python -c "import os; print(f'NASA API Key: {os.getenv(\"NASA_API_KEY\")}')"
+        env:
+          NASA_API_KEY: ${{ secrets.NASA_API_KEY }}  # Usando el Secret
