@@ -27,17 +27,18 @@ if imagen_url:
             contenido = file.read()
 
         contenido = re.sub(
-            r'<img [^>]*src="[^"]*"[^>]*>',  
-            f'<img width="500" height="300" src="{imagen_url}" />',
-            contenido
+            r'<img [^>]*src="[^"]*"[^>]*>', 
+            f'<img width="500" height="300" src="{imagen_url}" />', 
+            contenido,
+            count=1  
         )
 
         contenido = re.sub(
-            r'<p><i>Title: [^<]*</i></p>',
-            f'<p><i>Title: {title}</i></p>',
-            contenido
-        )
-
+            r'<p><i>Title: [^<]*</i></p>', 
+            f'<p><i>Title: {title}</i></p>', 
+            contenido,
+            count=1  
+             )
         with open(readme_path, "w") as file:
             file.write(contenido)
 
