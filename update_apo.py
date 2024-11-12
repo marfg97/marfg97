@@ -35,8 +35,8 @@ if imagen_url:
         )
 
         contenido = re.sub(
-            r'<p><i> [^<]*</i></p>', 
-            f'<p><i> {title}</i></p>', 
+            r'<p><i>Title: [^<]*</i></p>', 
+            f'<p><i>Title: {title}</i></p>', 
             contenido,
             count=1  
              )
