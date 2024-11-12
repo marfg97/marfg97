@@ -14,11 +14,12 @@ def obtener_apod():
         datos = respuesta.json()
         imagen_url = datos['url']
         title = datos['title']
-        return imagen_url, title
+        description = datos['explanation']
+        return imagen_url, title, description
     else:
         return None, "No se pudo obtener la imagen."
 
-imagen_url, title = obtener_apod()
+imagen_url, title, description = obtener_apod()
 
 if imagen_url:
 
@@ -28,7 +29,7 @@ if imagen_url:
 
         contenido = re.sub(
             r'<img [^>]*src="[^"]*"[^>]*>', 
-            f'<img width="500" height="300" src="{imagen_url}" />', 
+            f'<img width="500" height="300" src="{imagen_url}" title="{description}"/>', 
             contenido,
             count=1  
         )
