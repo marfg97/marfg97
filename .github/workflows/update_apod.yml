@@ -30,12 +30,16 @@ jobs:
         NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
       run: python update_apo.py
 
+    - name: Configure Git
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
     - name: Commit and Push changes
       run: |
         git add README.md
-        git commit -m "Actualiza imagen APOD en README.md"
+        git commit -m "Update APOD README.md"
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
     
