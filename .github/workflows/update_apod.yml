@@ -5,8 +5,7 @@ on:
   schedule:
     - cron: '0 6 * * *'  
   workflow_dispatch:
-env:
-  NASA_API_KEY: ${{NASA_API_KEY}}
+
   
 jobs:
   run_script:
@@ -26,7 +25,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
 
-    - name: Run update_apod script
+    - name: Run update APOD script
+      env:
+        NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
       run: python update_apo.py
 
     
