@@ -1,28 +1,31 @@
-name: Update APOD
+
+name: Daily Run update_apod Script
 
 on:
   schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+    - cron: '0 6 * * *'  
 
 jobs:
-  update-readme:
+  run_script:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
-    
+      uses: actions/checkout@v3
+
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
-        python-version: 3.12
+        python-version: '3.12'  
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install requests
 
-    - name: Run the APOD update script
-      run: python codelock54/update_apod.py
+    - name: Run update_apod script
+      run: python update_apod.py
 
+    
+      
+    
