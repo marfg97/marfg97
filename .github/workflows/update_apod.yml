@@ -1,5 +1,5 @@
 
-name: Daily Run update_apod Script
+name: Daily update
 
 on:
   schedule:
