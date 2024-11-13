@@ -26,10 +26,3 @@ jobs:
     - name: Run the APOD update script
       run: python update_apod.py
 
-    - name: Commit and push changes
-      run: |
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "actions@github.com"
-        git add README.md
-        git commit -m "Actualización de la imagen de la NASA"
-        git push
