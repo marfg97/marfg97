@@ -17,7 +17,7 @@ def obtener_apod():
         description = datos['explanation']
         return imagen_url, title, description
     else:
-        return None, "No se pudo obtener la imagen."
+        return None, "No se pudo obtener la imagen.", "Sin descripción"
 
 imagen_url, title, description = obtener_apod()
 
