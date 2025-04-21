@@ -27,8 +27,25 @@
 
 ###
 
-<p align="left">I'm a Systems Engineer specializing in Machine Learning on AWS, Data Analysis, Statistics, Mathematics, and Linux Servers.<br><br>- I’m currently working in Machine Learning, leveraging AWS certified skills.<br>- 📚 I'm continually enhancing my knowledge in advanced analytics and cloud technologies.<br>- ⚡ In my free time, I enjoy exploring new tech trends and refining my skills in Linux server management.</p>
+<p align="left">
+🔭 <strong>MLOps Engineer & Cloud Specialist</strong> | <strong>AWS Certified</strong> | <strong>Linux System Expert</strong><br><br>
 
+💡 <strong>Core Expertise:</strong><br>
+- Building end-to-end ML pipelines on AWS (SageMaker/Lambda/Glue)<br>
+- Developing computer vision systems for industrial applications<br>
+- Optimizing data workflows from ETL to real-time analytics<br><br>
+
+📜 <strong>Certifications:</strong><br>
+
+[![AWS ML Specialty](https://img.shields.io/badge/AWS-Machine%20Learning%20Specialty-FF9900?logo=amazonaws)](https://www.credly.com/badges/5194fb2c-2f87-4656-a86e-36653201f45f/public_url)
+[![AWS Cloud Practitioner](https://img.shields.io/badge/AWS-Cloud%20Practitioner-FF9900?logo=amazonaws)](https://www.credly.com/badges/fac9cee0-d332-46b0-bf33-0e9d38b2c658/public_url)
+[![SQL Advanced](https://img.shields.io/badge/HackerRank-SQL_Advanced-00EA64?logo=hackerrank)](https://www.hackerrank.com/certificates/20360c7f427a)
+
+⚡ <strong>Beyond Engineering:</strong><br>
+- Contributing to open-source ML tools<br>
+- <strong>Complex Problem-Solving:</strong> Debugged distributed system failures reducing downtime by 40%<br>
+- <strong>Stakeholder Communication:</strong> Translate technical specs for business teams <br>
+- Practicing Japanese <br><br>
 
 <h3 align="left">🛠 Languages</h3>
 
